@@ -26,7 +26,12 @@ function generatePassword() {
 }
 
 function copyPassword(){
-  passwordBox.select();
-  document.execCommand("copy");
-  alert("Passwird has been copied successfully!")
+  if(passwordBox.value === ''){
+    alert("Generate password first")
+  }
+  else{
+    passwordBox.select();
+    document.execCommand("copy");
+    alert("Password has been copied successfully!")
+  }
 }
