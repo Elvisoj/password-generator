@@ -75,5 +75,40 @@ input{
   background: #023586;
   border-radius:10px;
 }
-#002339
-#019f55
+.patron {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 50px;
+  
+  a {
+    color: #019f55;
+  }
+}
+
+@media screen and (min-width:750px){
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    padding: 60px;
+    border-radius: 15px;
+    width: 700px;
+    box-shadow: 0 0 15px rgba(3,64,160,0.27);
+  }
+  .content h2 {
+    font-size: 3.7rem;
+  }
+  input {
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .btn {
+    font-size: 2rem;
+  }
+  .btn img{
+    width: 18px;
+  }
+}
